@@ -1,12 +1,30 @@
 package produto;
 
 import java.util.Scanner;
-
+import produto.model.Produto;
+import produto.model.ProdutoCaderno;
+import produto.model.ProdutoCaneta;
 import produto.util.Cores;
 
 public class Menu {
 
 	public static void main(String[] args) {
+		
+		// Teste da classe Produto Caderno
+		ProdutoCaderno pcad1 = new ProdutoCaderno(2, 1, "Bloco de notas", 10.5f, 5, 100);
+		pcad1.visualizar();
+		pcad1.vender(2);
+		pcad1.visualizar();
+		pcad1.entrar(9);
+		pcad1.visualizar();
+		
+		// Teste da classe Produto Caneta
+		ProdutoCaneta pcan1 = new ProdutoCaneta(3, 2, "Caneta Esfereográfica", 2.5f, 5, "azul");
+		pcan1.visualizar();
+		pcan1.vender(3);
+		pcan1.visualizar();
+		pcan1.entrar(1);
+		pcan1.visualizar();
 
 		Scanner leia = new Scanner(System.in);
 

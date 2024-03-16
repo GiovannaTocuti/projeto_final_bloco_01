@@ -10,6 +10,6 @@ public interface ProdutoRepository {
 	public void atualizar(Produto produto);
 	public void deletar(int Id);
 	
-	public void venderint(int id, int qtd);
+	public void vender(int id, int qtd);
 	public void entrar(int id, int qtd);
 }
